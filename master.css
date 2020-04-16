@@ -125,21 +125,36 @@
   }
 }
 .ex-13-button:hover .ex-13-top-white {
-  animation-name: topright;
+  animation-name: topround;
   animation-duration: 2s;
   animation-timing-function: linear;
   position: absolute;
 }
 
-@keyframes topright {
+@keyframes topround {
   0% {
     top: -10px;
     left: 10%;
   }
 
-  50% {
+  25% {
     top: -10px;
-    left: 60%;
+    left: calc(100% - 30px);
+  }
+
+  45% {
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
+  }
+
+  75% {
+    top: calc(100% - 10px);
+    left: -30px;
+  }
+
+  95% {
+    top: -10px;
+    left: -30px;
   }
 
   100% {
@@ -149,21 +164,36 @@
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
-  animation-name: bottomright;
+  animation-name: bottomround;
   animation-duration: 2s;
   animation-timing-function: linear;
   position: absolute;
 }
 
-@keyframes bottomright {
+@keyframes bottomround {
   0% {
     bottom: -10px;
     right: 20%;
   }
 
-  50% {
+  20% {
     bottom: -10px;
-    right: 70%;
+    right: calc(100% - 30px);
+  }
+
+  40% {
+    bottom: calc(100% - 10px);
+    right: calc(100% - 30px);
+  }
+
+  70% {
+    bottom: calc(100% - 10px);
+    right: -30px;
+  }
+
+  90% {
+    bottom: -10px;
+    right: -30px;
   }
 
   100% {
